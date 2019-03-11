@@ -314,7 +314,6 @@ EditWindow = Ext.extend(Ext.Window, {
 						var npid = Ext.getCmp('tpmid').getValue();
 						if (false && npid != '' && npid != selectNode.id
 								&& npid != selectNode.parentNode.id) {
-							alert(false);
 							Ext.Msg.show({
 								title : '提示信息',
 								msg : '是否变更指标上级节点为:['
