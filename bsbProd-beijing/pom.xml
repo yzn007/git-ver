@@ -545,14 +545,16 @@
             </properties>
 
         </profile>
-        <!--测试环境-->
+        <!--tell 测试环境-->
         <profile>
             <id>test</id>
             <properties>
                 <profiles.active>test</profiles.active>
-                <cas.server.ip>https://10.1.3.193:8443/cas</cas.server.ip>
+                <cas.server.ip>http://10.10.10.41:17001/cas</cas.server.ip>
             </properties>
-
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
         </profile>
         <!--演示环境-->
         <profile>
@@ -570,9 +572,7 @@
                 <profiles.active>tellhow</profiles.active>
                 <cas.server.ip>http://10.10.10.41:17001/cas</cas.server.ip>
             </properties>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
+
         </profile>
         <!--生产环境-->
         <profile>

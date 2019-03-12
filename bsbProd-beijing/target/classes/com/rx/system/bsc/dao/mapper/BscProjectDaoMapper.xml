@@ -240,11 +240,11 @@
 	</insert>
 	<!-- 查询统计年份下拉框-->
 	<select id="getDimCycDataDS" parameterType="string" resultType="map">
-		SELECT CYCLE_ID AS `KEY`,CYCLE_NAME AS VALUE FROM BSC_PROJ_STAT_CYC WHERE PROJECT_ID=#{project_id}
+		SELECT CYCLE_ID AS `KEY`,CYCLE_NAME AS `VALUE` FROM BSC_PROJ_STAT_CYC WHERE PROJECT_ID=#{project_id}
 	</select>
 	<!-- 查询统计维度下拉框-->
 	<select id="getDimObjDataDS" parameterType="string" resultType="map">
-		SELECT OBJ_ID AS `KEY`,OBJ_NAME  AS VALUE FROM BSC_PROJ_STAT_OBJ WHERE PROJECT_ID=#{project_id}
+		SELECT OBJ_ID AS `KEY`,OBJ_NAME  AS `VALUE` FROM BSC_PROJ_STAT_OBJ WHERE PROJECT_ID=#{project_id}
 	</select>
 	<!-- 统计方案维度列表 -->
 	<select id="listPorjectObj" parameterType="map" resultType="map">

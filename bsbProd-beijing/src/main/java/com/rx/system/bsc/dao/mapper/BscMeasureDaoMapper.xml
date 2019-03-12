@@ -5,11 +5,11 @@
 <mapper namespace="com.rx.system.bsc.dao.BscMeasureDao">
 	<!-- 根据方案ID获取所有需要计算的指标 -->
 	<select id="getMeasureByProjectId" parameterType="string" resultType="BscMeasure">
-		select a.* 
-		from bsc_measure a,bsc_proj_mea_cmd b
+		select a.*
+		from bsc_measure a,bsc_proj_mea_cmd b 
 		where a.measure_id = b.measure_id
 			and b.project_id = #{projectId}
-		order by exe_order_id 
+		order by exe_order_id
 	</select>
 	
 	<!-- 获取指标计算依赖的指标 -->

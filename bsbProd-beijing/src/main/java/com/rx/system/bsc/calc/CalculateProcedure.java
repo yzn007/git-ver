@@ -11,11 +11,13 @@ import com.rx.framework.jdbc.JdbcManager;
 import com.rx.system.bsc.calc.parameter.ParameterHandler;
 import com.rx.system.bsc.calc.parse.IExpression;
 import com.rx.system.bsc.calc.parse.StackExpression;
+import com.rx.system.bsc.calc.parse.StringUtil;
 import com.rx.system.bsc.calc.service.IDataSource;
 import com.rx.system.bsc.calc.service.IDataSourceService;
 import com.rx.system.bsc.calc.service.IMeasure;
 import com.rx.system.bsc.calc.service.IMeasureService;
 import com.rx.system.bsc.service.IBscProjectService;
+import org.springframework.util.StringUtils;
 
 /**
  * 平衡计分卡计算程序
@@ -200,6 +202,8 @@ public class CalculateProcedure extends Thread implements Procedure{
 		for (int i = 0; i < lowMeaCommandList.size() && this.run; i++) {
 			Map<String, Object> map = lowMeaCommandList.get(i);
 			String command = String.valueOf(map.get("exe_command".toUpperCase()));
+			if (StringUtils.isEmpty(command) || command == "null")
+				continue;
 			command = this.replaceContextVar(command);
 			this.jdbcManager.execute(command);
 			
@@ -248,7 +252,6 @@ public class CalculateProcedure extends Thread implements Procedure{
 	/**
 	 * 根据指标解析出指标的公式SQL
 	 * @param measure
-	 * @param params
 	 * @return
 	 * @throws Exception
 	 */
@@ -274,7 +277,6 @@ public class CalculateProcedure extends Thread implements Procedure{
 	/**
 	 * 解析数据源指标
 	 * @param measure
-	 * @param params
 	 * @return
 	 * @throws Exception
 	 */
@@ -406,7 +408,6 @@ public class CalculateProcedure extends Thread implements Procedure{
 	/**
 	 * 解析复合指标
 	 * @param measure
-	 * @param params
 	 * @return
 	 * @throws Exception
 	 */
@@ -509,7 +510,6 @@ public class CalculateProcedure extends Thread implements Procedure{
 	/**
 	 * 解析导入指标
 	 * @param measure
-	 * @param params
 	 * @return
 	 * @throws Exception
 	 */
@@ -530,8 +530,6 @@ public class CalculateProcedure extends Thread implements Procedure{
 	
 	/**
 	 * 解析BSC积分公式
-	 * @param formula
-	 * @param referMeasures
 	 * @return
 	 * @throws Exception
 	 */
@@ -589,7 +587,6 @@ public class CalculateProcedure extends Thread implements Procedure{
 	
 	/**
 	 * 更新指标计算执行命令
-	 * @param sql
 	 * @throws Exception
 	 */
 	protected void updateExeCommand(String measure_id,String command) throws Exception {

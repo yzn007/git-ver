@@ -194,7 +194,7 @@
 					a.measure_id,
 					a.score_formular formula,
 					a.score_formular_desc formula_desc,
-					b.score value,
+					b.score `value`,
 					c.measure_name,
 					ifnull(d.value,0) complete_value,
 					ifnull(e.target_amount,0) target_value
@@ -231,7 +231,7 @@
 					a.measure_name,
 					a.formula_expr formula,
 					a.formula_desc formula_desc,
-					b.value value,
+					b.value `value`,
 					c.source_type_desc
 				from bsc_measure_h a left outer join bsc_result b
 					on a.measure_id =  b.measure_id
@@ -266,7 +266,7 @@
 	
 	<!-- 查询参数的值 -->
 	<select id="getParamaValue" parameterType="map" resultType="map">
-		select a.parameter_id,a.parameter_name,ifnull(b.value,a.value) value
+		select a.parameter_id,a.parameter_name,ifnull(b.value,a.value) `value`
 		from bsc_parameter_h a left outer join bsc_proj_obj_para_h b 
 			on a.parameter_id = b.parameter_id
 		where  b.project_id = #{project_id}
