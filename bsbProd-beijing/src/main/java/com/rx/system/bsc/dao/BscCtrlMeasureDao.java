@@ -31,6 +31,13 @@ public interface BscCtrlMeasureDao {
 	 * @throws Exception
 	 */
 	public void removeBscMeasure(Map<String, Object> paramMap) throws Exception;
+
+	/**
+	 * 删除bsc考核指标关联命令
+	 * @param paramMap
+	 * @throws Exception
+	 */
+	public void removeBscMeaCmd(Map<String, Object> paramMap) throws Exception;
 	
 	/**
 	 * 获取考核指标列表

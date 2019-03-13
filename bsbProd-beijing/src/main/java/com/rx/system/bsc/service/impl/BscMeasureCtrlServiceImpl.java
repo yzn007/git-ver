@@ -54,6 +54,7 @@ public class BscMeasureCtrlServiceImpl extends BaseService implements IBscMeasur
 	 */
 	public void removeBscMeasure(Map<String, Object> paramMap) throws Exception {
 		this.bscCtrlMeasureDao.removeBscMeasure(paramMap);
+		this.bscCtrlMeasureDao.removeBscMeaCmd(paramMap);
 	}
 		
 	/**

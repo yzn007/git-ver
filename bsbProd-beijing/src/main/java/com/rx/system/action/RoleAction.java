@@ -1,12 +1,14 @@
 package com.rx.system.action;
 
 import java.util.List;
+import java.util.UUID;
 
 import com.rx.log.annotation.FunDesc;
 import com.rx.log.annotation.UseLog;
 import com.rx.system.base.BaseDispatchAction;
 import com.rx.system.domain.SysRole;
 import com.rx.system.service.IRoleService;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * 系统角色操作Action
@@ -65,6 +67,8 @@ public class RoleAction extends BaseDispatchAction {
 	public String add() throws Exception {
 		SysRole role = getParamObject(SysRole.class);
 		try {
+			if (StringUtils.isEmpty(role.getRole_id()))
+				role.setRole_id(UUID.randomUUID().toString().replace("-",""));
 			roleService.addRole(role);
 			doSuccessInfoResponse("添加成功");
 		} catch (Exception e) {

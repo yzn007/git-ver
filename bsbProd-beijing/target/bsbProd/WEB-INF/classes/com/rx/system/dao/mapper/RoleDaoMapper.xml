@@ -23,9 +23,9 @@
 	
 	<!-- 添加角色 -->
 	<insert id="addRole" parameterType="SysRole">
-		<selectKey keyProperty="role_id" order="BEFORE" resultType="string">
-			select seq_role.nextval from dual
-		</selectKey>
+		<!--<selectKey keyProperty="role_id" order="BEFORE" resultType="string">-->
+			<!--select seq_role.nextval from dual-->
+		<!--</selectKey>-->
 		insert into bsc_role_info(role_id,role_name,bank_org_id) values(#{role_id},#{role_name},#{bank_org_id})
 	</insert>
 

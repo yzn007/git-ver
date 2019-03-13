@@ -2,7 +2,7 @@
 <%@taglib  prefix="s"  uri="/struts-tags"%>
 <html>
   <head>
-    <title>首页</title>
+    <title>指标管理系统</title>
 	<meta http-equiv="pragma" content="no-cache"/>
 	<meta http-equiv="cache-control" content="no-cache"/>
 	<meta http-equiv="expires" content="0"/> 

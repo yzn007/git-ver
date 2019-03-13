@@ -31,6 +31,13 @@
 		where project_id = #{project_id}
 			and measure_id = #{measure_id}
 	</delete>
+
+	<!-- 删除bsc考核指标关联命令 -->
+	<delete id="removeBscMeaCmd" parameterType="map">
+		delete from bsc_proj_mea_cmd
+		where project_id = #{project_id}
+		and measure_id = #{measure_id}
+	</delete>
 	
 	<!-- 获取考核指标列表 -->
 	<select id="listBscMeasure" parameterType="map" resultType="map">

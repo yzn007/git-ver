@@ -1,6 +1,10 @@
 package com.rx.system.domain;
 
 
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.UUID;
+
 /**
  * 系统角色实体对象
  * @author chenxd
