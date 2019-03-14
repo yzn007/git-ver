@@ -74,8 +74,8 @@
 	</update>
 	
 	<delete id="deleteParameter" parameterType="map">
-		delete from bsc_parameter t
-		 where t.parameter_id = #{parameter_id}
+		delete from bsc_parameter
+		 where parameter_id = #{parameter_id}
 	</delete>
 	
 	<select id="listItems" parameterType="map" resultType="BscOwnObjPara">
@@ -132,8 +132,8 @@
 	</select>
 
 	<delete id="deleteItemByParamId" parameterType="map">
-		delete from bsc_own_obj_para t
-		 where t.parameter_id = #{parameter_id}
+		delete from bsc_own_obj_para
+		 where parameter_id = #{parameter_id}
 	</delete>
 	
 	<delete id="deleteItem" parameterType="map">

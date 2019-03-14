@@ -22,12 +22,12 @@
 	</select>
 	
 	<delete id="delete" parameterType="map">
-		delete from bsc_proj_mea_imp t
-		 where t.year_id = #{year_id}
-		   and t.project_id = #{project_id}
-		   and t.cycle_id = #{cycle_id}
-		   and t.measure_id = #{measure_id}
-		   and t.object_id in 
+		delete from bsc_proj_mea_imp
+		 where year_id = #{year_id}
+		   and project_id = #{project_id}
+		   and cycle_id = #{cycle_id}
+		   and measure_id = #{measure_id}
+		   and object_id in
 		<foreach collection="object_ids" index="index" item="item" open="(" separator="," close=")">
 		    #{item}
       	 </foreach>  

@@ -324,10 +324,10 @@ Ext.onReady(function() {
     	parameter_name = record.get('parameter_name');
     	
     	var bankOrgId = record.get('owner_org_id');
-    	if(ownerOrgId!=bankOrgId){
-    		Ext.getCmp('deleteProject').setDisabled(true);
-    		Ext.getCmp('editProject').setDisabled(true);
-    	}	
+    	// if(ownerOrgId!=bankOrgId){
+    	// 	Ext.getCmp('deleteProject').setDisabled(true);
+    	// 	Ext.getCmp('editProject').setDisabled(true);
+    	// }
     	/*itemDS.reload({
 			params : {
 				parameter_id : parameter_id,

@@ -80,18 +80,18 @@
 	</insert>
 	<!-- 生成新方案_去掉多余指标 -->
 	<delete id="deleteSpareMea" parameterType="map">
-		delete from bsc_proj_mea t
-		where t.project_id = #{new_project_id}
-		and t.measure_id not in 
+		delete from bsc_proj_mea
+		where project_id = #{new_project_id}
+		and measure_id not in
 		 <foreach collection="measure_ids" index="index" item="item" open="(" separator="," close=")">
        	        #{item}
          </foreach> 
 	</delete>
 	
 	<delete id="deleteSpareMeaPara" parameterType="map">
-		delete from bsc_proj_mea_para t
-		where t.project_id = #{new_project_id}
-		and t.measure_id not in 
+		delete from bsc_proj_mea_para
+		where project_id = #{new_project_id}
+		and measure_id not in
 		<foreach collection="measure_ids" index="index" item="item" open="(" separator="," close=")">
        	        #{item}
          </foreach> 
