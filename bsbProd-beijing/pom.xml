@@ -541,7 +541,7 @@
             <id>dev</id>
             <properties>
                 <profiles.active>dev</profiles.active>
-                <cas.server.ip>https://127.0.0.1:8443/cas</cas.server.ip>
+                <cas.server.ip>http://10.10.10.41:17001/cas</cas.server.ip>
             </properties>
 
         </profile>

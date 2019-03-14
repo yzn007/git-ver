@@ -45,9 +45,8 @@
 		    b.measure_name,
 		    b.formula_expr as mea_formula,
 		    b.formula_desc as mea_formula_desc
-		    from bsc_proj_mea a,bsc_measure b
+		    from bsc_proj_mea a left join bsc_measure b on a.measure_id = b.measure_id
 		    where a.project_id = #{project_id}
-		      and a.measure_id = b.measure_id
 		    order by a.mea_order_id
 	</select>
 	

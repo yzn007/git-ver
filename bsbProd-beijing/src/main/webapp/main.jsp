@@ -39,7 +39,7 @@
 	<script type="text/javascript">
 		var pathUrl = '${pageContext.request.contextPath}';
 		var extPath = '${pageContext.request.contextPath}/public/scripts/ext3.4.0';
-		Ext.BLANK_IMAGE_URL = extPath + '/resources/images/default/s.gif';
+//		Ext.BLANK_IMAGE_URL = extPath + '/resources/images/default/s.gif';
 		Ext.form.Field.prototype.msgTarget = 'side';
 		var sessionId = "<%=session.getId()%>";
 		var currentBankOrgID = "${sessionScope.currentUser.bank_org_id}";

@@ -172,7 +172,7 @@ public class PublicMeasureServiceImpl extends BaseService implements IPublicMeas
 	
 	/**
 	 * 获取基础指标列表
-	 * @param measure
+	 * @param paramMap
 	 * @throws Exception
 	 */
 	public List<Map<String, Object>> listBaseEngMeasure(Map<String, Object> paramMap) throws Exception {
@@ -182,7 +182,7 @@ public class PublicMeasureServiceImpl extends BaseService implements IPublicMeas
 	
 	/**
 	 * 获取私有指标列表
-	 * @param measure
+	 * @param paramMap
 	 * @throws Exception
 	 */
 	public List<Map<String, Object>> listEngMeasure(Map<String, Object> paramMap) throws Exception {
