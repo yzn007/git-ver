@@ -107,8 +107,8 @@
       <file leaf-file-name="parameter_layout.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/bsc/scripts/parameter_layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="326" column="37" lean-forward="true" selection-start-line="326" selection-start-column="37" selection-end-line="326" selection-end-column="37" />
+            <state relative-caret-position="156">
+              <caret line="321" column="61" lean-forward="true" selection-start-line="321" selection-start-column="61" selection-end-line="321" selection-end-column="61" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -210,7 +210,6 @@
       <find>handleMouseDown</find>
       <find>添加</find>
       <find>deleteProject</find>
-      <find>ownerOrgId</find>
       <find>l</find>
       <find>logout</find>
       <find>p</find>
@@ -219,6 +218,7 @@
       <find>parameter</find>
       <find>de</find>
       <find>delete</find>
+      <find>ownerOrgId</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -1299,15 +1299,16 @@
       <updated>1552293557410</updated>
       <workItem from="1552293558791" duration="30057000" />
       <workItem from="1552453719118" duration="284000" />
-      <workItem from="1552457750261" duration="18806000" />
+      <workItem from="1552457750261" duration="20219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49147000" />
+    <option name="totallyTimeSpent" value="50560000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1324,7 +1325,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38297874" sideWeight="0.551395" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29787233" sideWeight="0.49118942" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29787233" sideWeight="0.49118942" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1841,26 +1842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rx/system/bsc/dao/mapper/BscCtrlMeasureDaoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="76" column="26" lean-forward="true" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
-          <folding>
-            <marker date="1552553027071" expanded="true" signature="286:451" ph="insert into bsc_proj_mea... " />
-            <marker date="1552553027071" expanded="true" signature="537:670" ph="update bsc_p... " />
-            <marker date="1552553027071" expanded="true" signature="758:851" ph="delete from " />
-            <marker date="1552553027071" expanded="true" signature="941:1037" ph="delete from " />
-            <marker date="1552553027071" expanded="true" signature="1139:1402" ph="select a.*, bsc_proj_mea" />
-            <marker date="1552553027071" expanded="true" signature="1507:1576" ph="select measu... bsc_measure" />
-            <marker date="1552553027071" expanded="true" signature="1679:1756" ph="select param... bsc_parameter" />
-            <marker date="1552553027071" expanded="true" signature="1857:1960" ph="delete from " />
-            <marker date="1552553027071" expanded="true" signature="2049:2199" ph="insert into bsc_proj_mea_para... " />
-            <marker date="1552553027071" expanded="true" signature="2932:2990" ph="select * fro... bsc_proj_mea" />
-            <marker date="1552553027071" expanded="true" signature="3074:3196" ph="update bsc_p... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rx/system/bsc/dao/mapper/BscProjectDaoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1906,10 +1887,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rx/system/bsc/dao/mapper/BscCtrlMeasureDaoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="76" column="26" lean-forward="true" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
+          <folding>
+            <marker date="1552553027071" expanded="true" signature="286:451" ph="insert into bsc_proj_mea... " />
+            <marker date="1552553027071" expanded="true" signature="537:670" ph="update bsc_p... " />
+            <marker date="1552553027071" expanded="true" signature="758:851" ph="delete from " />
+            <marker date="1552553027071" expanded="true" signature="941:1037" ph="delete from " />
+            <marker date="1552553027071" expanded="true" signature="1139:1402" ph="select a.*, bsc_proj_mea" />
+            <marker date="1552553027071" expanded="true" signature="1507:1576" ph="select measu... bsc_measure" />
+            <marker date="1552553027071" expanded="true" signature="1679:1756" ph="select param... bsc_parameter" />
+            <marker date="1552553027071" expanded="true" signature="1857:1960" ph="delete from " />
+            <marker date="1552553027071" expanded="true" signature="2049:2199" ph="insert into bsc_proj_mea_para... " />
+            <marker date="1552553027071" expanded="true" signature="2932:2990" ph="select * fro... bsc_proj_mea" />
+            <marker date="1552553027071" expanded="true" signature="3074:3196" ph="update bsc_p... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/bsc/scripts/parameter_layout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="326" column="37" lean-forward="true" selection-start-line="326" selection-start-column="37" selection-end-line="326" selection-end-column="37" />
+        <state relative-caret-position="156">
+          <caret line="321" column="61" lean-forward="true" selection-start-line="321" selection-start-column="61" selection-end-line="321" selection-end-column="61" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
