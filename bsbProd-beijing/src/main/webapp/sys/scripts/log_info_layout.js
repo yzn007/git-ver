@@ -147,9 +147,9 @@ var mainPanel = new Ext.Panel({
 	layout : 'border',
 	split : true,
 	items : [{
-			region : 'west',
+			region :'center',
 			xtype : 'panel',
-			width : '53%',
+			width : '98%',
 //			title : '登陆情况列表',
 			contentEl : 'grid',
 			border : true,
@@ -166,14 +166,14 @@ var mainPanel = new Ext.Panel({
 					lastText : '最后一页',
 					refreshText : '刷新'
 				})
-		},{
+		}/*,{
 			region : 'center',
 			xtype : 'panel',
 			contentEl : 'gridDetail',
 //			title : '登陆明细列表',
 			border : true,
 			tbar : centerTbar
-		}]
+		}*/]
 });
 	
 
@@ -244,7 +244,7 @@ function load(path){
 			return;
 		}
 	});
-	gridDetail.clearAll();
+	// gridDetail.clearAll();
 	
 	 grid.attachEvent("onRowSelect",function(rowId,cellIndex){
 	  export_session_id = rowId;

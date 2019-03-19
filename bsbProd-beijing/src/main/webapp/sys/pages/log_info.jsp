@@ -45,7 +45,7 @@
   
   <body>
     <div id="grid" width="100%" height="100%" style="background-color:white;overflow:auto;border:0px"></div>
-    <div id="gridDetail" width="100%" height="100%" style="background-color:white;overflow:auto;border:0px"></div>
+    <%--<div id="gridDetail" width="100%" height="100%" style="display:none;background-color:white;overflow:auto;border:0px"></div>--%>
     <form id="excelForm" name="excelForm" action="log_export.action" method="post" target="">
 		<input type="hidden" name="begin_date" />
 		<input type="hidden" name="end_date" />
